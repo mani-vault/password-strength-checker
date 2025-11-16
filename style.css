@@ -1,0 +1,220 @@
+/* ==========================================================
+   🌞 LIGHT THEME (with light cyber neon effects added)
+   ========================================================== */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s, color 0.3s;
+  background: #eef6ff; /* slight blue tint */
+  color: #222;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0077cc;
+  color: white;
+  padding: 15px 20px;
+  box-shadow: 0 0 10px rgba(0,119,204,0.45); /* neon glow */
+}
+
+/* Main Card */
+main {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #ffffffcc; /* slight transparency */
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,119,204,0.25), 
+              0 0 25px rgba(188,0,255,0.12);
+  border: 1px solid rgba(0,119,204,0.2);
+  backdrop-filter: blur(4px);
+}
+
+h2 {
+  color: #0077cc;
+  text-shadow: 0 0 5px rgba(0,119,204,0.45);
+}
+
+label {
+  font-weight: bold;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(0,119,204,0.35);
+  border-radius: 6px;
+  background: #ffffffb5;
+  color: #222;
+  box-shadow: inset 0 0 6px rgba(0,119,204,0.25);
+  transition: 0.25s;
+}
+
+input:focus {
+  border-color: #0077cc;
+  box-shadow: 0 0 8px rgba(0,119,204,0.55),
+              0 0 12px rgba(188,0,255,0.35);
+  outline: none;
+}
+
+/* Password container */
+.password-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.password-container input {
+  flex: 1;
+}
+
+.password-container button {
+  background: #555;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 8px rgba(0,0,0,0.25);
+}
+
+.password-container button:hover {
+  background: #333;
+  box-shadow: 0 0 12px rgba(0,119,204,0.45);
+}
+
+/* Main Buttons */
+button {
+  background: #0077cc;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(0,119,204,0.45),
+              0 0 15px rgba(188,0,255,0.25);
+}
+
+button:hover {
+  background: #005fa3;
+  box-shadow: 0 0 12px rgba(0,119,204,0.7),
+              0 0 20px rgba(188,0,255,0.4);
+}
+
+/* Password strength bar */
+.strength-container {
+  width: 100%;
+  height: 10px;
+  background: #d5e9ff;
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: inset 0 0 6px rgba(0,119,204,0.3);
+}
+
+#strengthBar {
+  height: 10px;
+  width: 0%;
+  background: #ff5b5b;
+  border-radius: 5px;
+  transition: width 0.3s, background 0.3s;
+  box-shadow: 0 0 10px rgba(255,91,91,0.55);
+}
+
+/* Instructions List */
+ul {
+  margin-top: 10px;
+  color: #003b66;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #0077cc;
+  color: white;
+  margin-top: 40px;
+  box-shadow: 0 0 10px rgba(0,119,204,0.45);
+}
+
+/* ==========================================================
+   🌙 DARK CYBER NEON THEME (unchanged)
+   ========================================================== */
+
+body.dark {
+  background: #05010A;
+  color: #E0E0FF;
+}
+
+body.dark header,
+body.dark footer {
+  background: #0A001A;
+  border-bottom: 1px solid rgba(0,229,255,0.3);
+  box-shadow: 0 0 12px rgba(188,0,255,0.4);
+}
+
+body.dark main {
+  background: #0A001A;
+  box-shadow: 0 0 20px rgba(188,0,255,0.35),
+              inset 0 0 15px rgba(0,229,255,0.15);
+  border: 1px solid rgba(0,229,255,0.2);
+}
+
+body.dark h2 {
+  color: #00E5FF;
+  text-shadow: 0 0 8px #00E5FF;
+}
+
+body.dark input {
+  background: #080014;
+  border: 1px solid rgba(0,229,255,0.3);
+  color: #E0E0FF;
+  box-shadow: inset 0 0 8px rgba(188,0,255,0.25);
+}
+
+body.dark button {
+  background: linear-gradient(90deg, #00E5FF, #BC00FF);
+  border: none;
+  color: #05010A;
+  text-shadow: 0 0 5px rgba(0,0,0,0.8);
+  box-shadow: 0 0 10px rgba(0,229,255,0.5);
+}
+
+body.dark button:hover {
+  box-shadow: 0 0 15px rgba(188,0,255,0.7),
+              0 0 25px rgba(0,229,255,0.7);
+  transform: translateY(-1px);
+}
+
+body.dark .password-container button {
+  background: #BC00FF;
+  color: #fff;
+  box-shadow: 0 0 8px rgba(188,0,255,0.6);
+}
+
+body.dark .password-container button:hover {
+  background: #D500FF;
+  box-shadow: 0 0 12px rgba(188,0,255,0.9);
+}
+
+body.dark #strengthBar {
+  background: #BC00FF;
+  box-shadow: 0 0 12px #BC00FF;
+}
+
+body.dark .strength-container {
+  background: rgba(255,255,255,0.15);
+}
+
+body.dark ul {
+  color: #9A9AD9;
+}

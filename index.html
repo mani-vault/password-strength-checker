@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Password Security Checker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>PassEdge - Password Auditor</h1>
+    <button id="themeToggle">🌙</button>
+  </header>
+
+  <main>
+    <h2>🔐 Password Strength Checker</h2>
+    <p>Type your username and password to check how strong it is:</p>
+
+    <label>Username:</label>
+    <input type="text" id="username" placeholder="Enter your username" />
+
+    <label>Password:</label>
+    <div class="password-container">
+      <input type="password" id="password" placeholder="Enter your password" oninput="checkPasswordStrength()" />
+      <button id="togglePassword" type="button">Show</button>
+    </div>
+
+    <button id="generateBtn">Generate Secure Password 🔄</button>
+
+    <div class="strength-container">
+      <div id="strengthBar"></div>
+    </div>
+
+    <p id="strengthText">Strength: </p>
+    <p id="entropyText" style="margin-top:-8px; font-size: 14px; opacity: 0.85;">Entropy: 0 bits</p>
+    <ul id="suggestionsList"></ul>
+  </main>
+
+  <footer>
+    <p>© 2025 PassEdge™ — Password Entropy & Strength Analyzer</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
